@@ -1,6 +1,7 @@
 import React from 'react'
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from '@apollo/client'
+import { PokemonsContainer } from './containers/PokemonsContainer';
 
 function App() {
   const client = new ApolloClient({
@@ -10,7 +11,7 @@ function App() {
   return (
    <ApolloProvider client={client}>
      <main>
-       <p>I am a Pokemon!</p>
+       <PokemonsContainer />
      </main>
    </ApolloProvider>
   );
