@@ -9,7 +9,7 @@ export const PokemonsContainer = () => {
     });
 
     return (
-        <div className="pokemons">
+        <div className="pokemons_container">
             {pokemons && pokemons.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} />)}
         </div>
     )
